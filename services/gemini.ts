@@ -9,7 +9,7 @@ export const getRomanticMessage = async (name: string): Promise<string> => {
   }
 
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: 'AIzaSyArv-5v7fIxkh8cGhMtvvZcs1fBqVvYaJ8' });
     
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
